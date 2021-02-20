@@ -1,7 +1,31 @@
 doctype html
 html
   head
+    meta(name="viewport", content="width=device-width,initial-scale=1.0")
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/all.min.css")
+    script(src="//code.jquery.com/jquery-1.11.1.min.js")
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
+    nav.navbar.navbar-fixed-top.navbar-expand-md.navbar-light
+      .container
+        a.navbar-brand(href="/") 
+          img.d-inline-block.align-baseline(src="/images/PLEX_04.png" width="60")
+          button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarMain")
+            span.navbar-toggler-icon 
+        #navbarMain.collapse.navbar-collapse
+          ul.nav.navbar-nav.ml-auto 
+            li.nav-item 
+              a.nav-link(href="/movie/") Movies 
+            li.nav-item 
+              a.nav-link(href="/about/") About 
+            li.nav-item 
+              a.nav-link(href="/display/") Display
     block content
+    footer.footer.fixed-bottom.mt-auto.py-3.plex-gradient
+      .container.text-center
+          span &copy; Plex - Designed and Developed by Munindra Zinzuvadia-2021
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js",integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo", crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49",crossorigin="anonymous")
+    script(src="/javascripts/bootstrap.min.js")

@@ -1,12 +1,93 @@
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+@font-face{ font-family: "product-sans"; src: url("../webfonts/Product\ Sans\ Regular.ttf");}
+@font-face{font-family: "product-sans-bold"; src: url("../webfonts/Product\ Sans\ Bold.ttf");}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'product-sans-bold';
+}
+
+.navbar-brand {
+  font-family: 'product-sans-bold';
+}
+
+legend {
+  font-family: 'Lobster', cursive;
+}
+
+.primary-txt-fill{
+  color: #4a00e0;
+}
+
+.accent-txt-fill{
+  color: #7F00FF;
+}
+
+.dark-txt-fill{
+  color: #303030 !important;
+}
+
+.gray-txt.fill{
+  color: #808080;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Cabin", Arial, sans-serif;
+  background-color: #ffffff;
 }
 
-a {
-  color: #00B7FF;
+.container-bg{
+  background-color: #f5f5f5;
 }
 
-.heading{
-  color: black;
+.nav{
+  background-color: #ffffff;
+}
+
+.navbar{
+  box-shadow: 0 5px 20px #dfdfdf;
+}
+
+.content-background-gradient{
+  background-image: url("../images/Home_Background.jpg");
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 0px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.pb-15{
+  padding-top: 2.5em !important;
+  padding-bottom: 2.5em !important;
+}
+
+.mb-6{
+  margin-bottom: 5rem;
+}
+
+.p-6{
+  padding: 5rem;
+}
+
+.featurette-divider{
+  margin: 5rem;
+}
+
+.plex-gradient{
+  background: linear-gradient(to right, #7F00FF, #E100FF, #E100FF, #7F00FF);
+  background-size: 400%;
+  color: #f5f5f5;
+}
+/* -------------------- Carousel Styling -------------------- */
+.carousel-inner {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
 }
