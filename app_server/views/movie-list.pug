@@ -5,15 +5,15 @@ block content
     .container 
       .row
         h1.text-center.mx-auto.p-6.dark-txt-fill Movies
-
-  .container.mt-5
-    .row.row-cols-1.row-cols-md-3.mb-3
-      each movie in movies 
-        .col.col-md-3
-          .card.mb-4.shadow-sm
-            .card-block.card-body 
-              h5.card-title= movie.movie_title
-              h6.card-subtitle.mb-2.text-muted= movie.genre
-            ul.list-group.list-group-flush 
-              li.list-group-item= movie.release_date 
-              li.list-group-item= movie.duration
+  .row.row-cols-1.row-cols-md-3.mb-5
+    each movie in movies 
+      .col.col-md-2.my-5.mx-auto
+        .card.mb-4.shadow-sm.cw-18
+          .card-block.card-body 
+            h5.card-title= movie.movie_title
+            h6.card-subtitle.mb-2.text-muted= movie.genre
+          ul.list-group.list-group-flush 
+            li.list-group-item= movie.release_date 
+            li.list-group-item= movie.duration
+          .card-body 
+            a.btn.btn-primary(href="#") Watch

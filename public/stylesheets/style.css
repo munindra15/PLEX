@@ -47,6 +47,11 @@ body {
   box-shadow: 0 5px 20px #dfdfdf;
 }
 
+/*Custom Width*/
+.cw-18{
+  width: 18rem;
+}
+
 .content-background-gradient{
   background-image: url("../images/Home_Background.jpg");
   padding-left: 50px;
