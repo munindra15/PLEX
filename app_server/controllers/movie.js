@@ -1,3 +1,4 @@
+/* Array of objects for movies */
 movieArray = [{
     movie_title: "Sausage Party",
     release_date: "2016",
