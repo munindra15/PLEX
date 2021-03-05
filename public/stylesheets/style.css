@@ -2,6 +2,9 @@
 @font-face{ font-family: "product-sans"; src: url("../webfonts/Product\ Sans\ Regular.ttf");}
 @font-face{font-family: "product-sans-bold"; src: url("../webfonts/Product\ Sans\ Bold.ttf");}
 
+.font-p-sans{font-family: 'product-sans';}
+.font-p-sans-b{font-family: 'product-sans-bold';}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'product-sans-bold';
 }
@@ -15,7 +18,11 @@ legend {
 }
 
 .primary-txt-fill{
-  color: #4a00e0;
+  color: #4a00e0; 
+}
+
+.bg-primary{
+  background-color: #4a00e0 !important;
 }
 
 .accent-txt-fill{
@@ -43,9 +50,6 @@ body {
   background-color: #ffffff;
 }
 
-.navbar{
-  box-shadow: 0 5px 20px #dfdfdf;
-}
 
 /*Custom Width*/
 .cw-18{
@@ -54,12 +58,8 @@ body {
 
 .content-background-gradient{
   background-image: url("../images/Home_Background.jpg");
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 0px;
+  padding: 3rem;
   background-repeat: no-repeat;
-  background-size: 100%;
   margin: 0px;
   overflow: hidden;
 }
@@ -77,8 +77,13 @@ body {
   padding: 5rem;
 }
 
+.custom-container{
+  padding-right: 3rem; padding-left: 3rem;
+  width:100%; margin-right:auto; margin-left:auto
+}
+
 .featurette-divider{
-  margin: 5rem;
+  margin: 3rem;
 }
 
 .plex-gradient{
@@ -90,6 +95,8 @@ body {
 .carousel-inner {
   border-radius: 10px;
 }
+
+.home-img{width: 100%;}
 
 @media screen and (min-width: 992px) {
   .container {
