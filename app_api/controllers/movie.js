@@ -8,9 +8,24 @@ const getMovies = (req, res) => {
 };
 
 const createMovies = (req, res) => {
-    res
-    .status(201)
-    .json({"status" : "Success"});
+    movieModel.create({
+        title: req.body.name,
+        genre: req.body.genre.split(','),
+        release_year: req.body.year,
+        duration: res.body.duration,
+        rating: res.body.rating
+    },
+    (err, movie) => {
+        if(err){
+            res
+            .status(400)
+            .json(err);
+        } else {
+            res
+            .status(201)
+            .json(movie);
+        }
+    });
 };
 
 const getSingleMovie = (req, res) => {

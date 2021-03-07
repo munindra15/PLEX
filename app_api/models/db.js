@@ -6,7 +6,7 @@ mongoose.connect(dbURI,{dbName: 'plex'});
 mongoose.connection.on('connected', () => {
     console.log('- - - - - - - - - - - - - - - - - -');
     console.log('- - - - - - - - - - - - - - - - - -');
-    console.log('- Mongoose connected to ${dbURI} -');
+    console.log(`- Mongoose connected to ${dbURI} -`);
     console.log('- - - - - - - - - - - - - - - - - -');
     console.log('- - - - - - - - - - - - - - - - - -');
 });
